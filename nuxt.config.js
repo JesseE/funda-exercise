@@ -53,7 +53,6 @@ export default {
   */
   axios: {
     proxy: true,
-    prefix: '/'
     // See https://github.com/nuxt-community/axios-module#options
 
   },
