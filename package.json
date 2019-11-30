@@ -1,7 +1,7 @@
 {
-  "name": "scaffolding-nuxt-app",
+  "name": "Funda",
   "version": "1.0.0",
-  "description": "My groundbreaking Nuxt.js project",
+  "description": "Funda exercise",
   "author": "Jesse Eikema",
   "private": true,
   "scripts": {
