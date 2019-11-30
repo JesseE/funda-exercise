@@ -53,7 +53,9 @@ export default {
   */
   axios: {
     proxy: true,
+    prefix: 'http://partnerapi.funda.nl/feeds/Aanbod.svc/'
     // See https://github.com/nuxt-community/axios-module#options
+
   },
 
   proxy: {
