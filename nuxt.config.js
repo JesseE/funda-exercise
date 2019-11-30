@@ -38,18 +38,32 @@ export default {
   /*
   ** Nuxt.js modules
   */
+  //https://nuxtjs.org/faq/http-proxy/
+  //axios has bult in support for this proxy module
+  //this needs to be done if you want to have cross origin resources
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    ['@nuxtjs/axios'],
+    '@nuxtjs/dotenv',
     // '@nuxtjs/pwa',
   ],
+
   /*
   ** Axios module configuration
   */
   axios: {
+    proxy: true,
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  proxy: {
+    '/api/': {
+      target: 'http://partnerapi.funda.nl/feeds/Aanbod.svc/',
+      pathRewrite: {
+        '^/api/': ''
+      }
+    }
+  },
   /*
   ** Build configuration
   */
@@ -71,6 +85,9 @@ export default {
       ]
     },
     extend(config, ctx) {
+      config.node = {
+        fs: 'empty'
+      }
     }
   }
 }
