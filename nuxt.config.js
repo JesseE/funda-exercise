@@ -57,6 +57,19 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    babel: {
+      babelrc: false,
+      cacheDirectory: undefined,
+      "presets": [
+        ["@babel/preset-env", {
+          "useBuiltIns": false,
+        }],
+      ],
+      plugins: [
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-transform-runtime"
+      ]
+    },
     extend(config, ctx) {
     }
   }
