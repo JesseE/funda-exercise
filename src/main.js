@@ -6,13 +6,11 @@ import VueRouter from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import ('./pages/home.vue')
+    component: () => import ('./pages/detail-page.vue')
   },
 ]
 
-const router = new VueRouter({
-  routes
-})
+const router = new VueRouter({routes})
 
 Vue.use(VueRouter)
 
