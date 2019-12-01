@@ -5,6 +5,7 @@
       :adres="this.data.Adres"
       :postCode="this.data.Postcode"
       :plaats="this.data.Plaats"
+      :prijs="this.data.KoopPrijs"
     />
     <main>
       <router-view :dataObject="this.data"></router-view>

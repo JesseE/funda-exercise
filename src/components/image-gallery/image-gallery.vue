@@ -5,7 +5,7 @@
 		:pagination-enabled="false"
 		:navigationEnabled="true">
 		<slide v-for="(item, index) in flattendArray(this.$props.images)" :key="index">
-			<fixedRatio :width="400" :height="300">
+			<fixedRatio :width="300" :height="200">
 				<lazyLoad>
 					<img :src="item.Url" />
 				</lazyLoad>
@@ -36,7 +36,8 @@ export default {
 				if(image.MediaItems[2] !== undefined) {
 					newArray.push(image.MediaItems[2])
 					return image.MediaItems[2]
-				}})
+				}
+			})
 			return newArray;
 		},
 	}
