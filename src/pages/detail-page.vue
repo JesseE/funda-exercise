@@ -21,7 +21,8 @@ export default {
   },
   props: {
     dataObject : {
-      type: Object
+      type: Object,
+      default: () => {}
     }
   }
 }
