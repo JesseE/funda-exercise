@@ -5,7 +5,8 @@ function getProjectData(projectId) {
     headers: {
       'Access-Control-Allow-Origin':'*',
       'host': window.location.host,
-      credentials: false
+      'credentials': false,
+      'mode': 'no-cors'
     }
   }
 	return axios.get(`https://partnerapi.funda.nl/feeds/Aanbod.svc/json/detail/${process.env.TOKEN}/koop/${projectId}/`, headerConfig.headers)
