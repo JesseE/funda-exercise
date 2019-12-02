@@ -1,6 +1,5 @@
 <template>
   <div class="image-gallery">
-
     <carousel
       :per-page="1"
       :pagination-enabled="false"
@@ -20,12 +19,12 @@
 import { Carousel, Slide } from 'vue-carousel';
 
 export default {
-	components: {
+  name:'imageGallery',
+  components: {
 		Carousel,
 		Slide,
 		lazyLoad: () => import('../lazy-load/lazy-load.vue'),
 	},
-	name:'imageGallery',
 	props: {
 		images: Array
 	},
