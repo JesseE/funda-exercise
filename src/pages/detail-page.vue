@@ -1,7 +1,7 @@
 <template>
   <div class="main-content">
     <div class="main-content__flex-column">
-      <descriptionList :kenmerken="this.$props.dataObject.KenmerkenKort.Kenmerken"/>
+      <descriptionList :kenmerken="this.$props.dataObject.KenmerkenKort"/>
       <imageGallery :images="this.$props.dataObject.Media"/>
     </div>
     <textBlock

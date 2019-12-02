@@ -2,7 +2,7 @@
 .text-block {
 	margin: 0 auto;
 	padding: 0 15px;
-	line-height: 1.5rem;
+
 
 	@media(min-width: 768px) {
 		width: 80%;
@@ -11,11 +11,16 @@
 }
 
 .text-block__title {
+  font-size: 1.25rem;
 
+  @media(min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .text-block__text {
-
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .text-block__overflow {
@@ -30,4 +35,5 @@
   justify-content: center;
   border: 1px solid transparent;
   background: lightgrey;
+  outline: none;
 }
