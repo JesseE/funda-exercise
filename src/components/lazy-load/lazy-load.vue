@@ -56,9 +56,12 @@ export default {
 </script>
 
 <style>
-
   .lazy-load {
-    height: 100%; /* without the 100% height child will not size properly */
+    height: 100%;
     min-height: 135px;
+  }
+
+  .lazy-load > img {
+	  width: 100%;
   }
 </style>

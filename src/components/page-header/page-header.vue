@@ -4,7 +4,7 @@
 		<div class="page-header__description">
 			<h1 class="page-header__title">{{this.$props.adres}}</h1>
 			<h2 class="page-header__subtitle">{{this.$props.postCode}} {{this.$props.plaats}}</h2>
-			<h3 class="page-header__subtitle">Koopprijs: {{this.$props.prijs}}</h3>
+			<h3 class="page-header__subtitle">Koopprijs: € {{this.$props.prijs}}</h3>
 		</div>
 	</header>
 </template>

@@ -4,8 +4,10 @@
       <descriptionList :kenmerken="this.$props.dataObject.KenmerkenKort.Kenmerken"/>
       <imageGallery :images="this.$props.dataObject.Media"/>
     </div>
-
-    <p class="main-content__description">{{this.$props.dataObject.VolledigeOmschrijving}}</p>
+    <textBlock
+      title="Omschrijving"
+      :summary="this.$props.dataObject.VolledigeOmschrijving"
+    />
   </div>
 </template>
 
@@ -14,7 +16,8 @@ export default {
   name: 'detailPage',
   components: {
     descriptionList: () => import('../components/description-list/description-list.vue'),
-    imageGallery: () => import('../components/image-gallery/image-gallery.vue')
+    imageGallery: () => import('../components/image-gallery/image-gallery.vue'),
+    textBlock: () => import('../components/text-block/text-block.vue')
   },
   props: {
     dataObject : {

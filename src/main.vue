@@ -8,7 +8,7 @@
       :prijs="this.data.KoopPrijs"
     />
     <main>
-      <router-view :dataObject="this.data"></router-view>
+      <router-view :dataObject="this.data" />
     </main>
     <page-footer/>
   </div>
@@ -28,12 +28,11 @@ export default {
 		}
 	},
 	created() {
-		const projectId = '3cc5fa5b-9cd6-4361-bc42-a6ef7d2defd0'
-    this.getProject(projectId)
+    this.getProject('3cc5fa5b-9cd6-4361-bc42-a6ef7d2defd0')
 	},
 	methods: {
 		getProject(projectId) {
-			return getProjectData(projectId).then(res => { console.log(res.data), this.data = res.data})
+			return getProjectData(projectId).then(res => this.data = res.data)
 		}
 	}
 }

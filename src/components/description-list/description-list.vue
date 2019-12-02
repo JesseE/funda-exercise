@@ -5,7 +5,7 @@
 			v-for="(kenmerk, index) in this.$props.kenmerken"
 			:key="index"
 		>
-			<span v-html="kenmerk.Naam" /> - <span v-html="kenmerk.Waarde"/>
+			<span class="description-list__item-text" v-html="kenmerk.Naam" /><span class="description-list__item-text" v-html="kenmerk.Waarde"/>
 		</li>
 	</ul>
 </template>

@@ -19,7 +19,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n/* ha
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".lazy-load {\\n  height: 100%;\\n  /* without the 100% height child will not size properly */\\n  min-height: 135px;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/lazy-load/lazy-load.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js!./node_modules/vue-loader/lib??vue-loader-options");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".lazy-load {\\n  height: 100%;\\n  min-height: 135px;\\n}\\n.lazy-load > img {\\n  width: 100%;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/lazy-load/lazy-load.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 

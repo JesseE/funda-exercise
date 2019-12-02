@@ -1,8 +1,11 @@
 .page-footer {
 	height: 200px;
-	background: @bg-grey;
-	margin-top: @spacing-l*2;
-	@media(min-width: 1024px) {
+  width: 100%;
+  margin-top: @spacing-l*2;
+  padding: @spacing-l @spacing-s;
+  background: @bg-grey;
+
+  @media(min-width: 1024px) {
 		height: 400px;
 	}
 }
@@ -10,6 +13,5 @@
 .page-footer__title {
 	max-width: 1024px;
 	margin: 0 auto;
-	padding-top: @spacing-l;
 
 }
