@@ -1,5 +1,5 @@
-# scaffolding-vue
-Use this to start a project with vue
+# Funda Exercise
+Use this to start the project
 
 ```npm i```
 
